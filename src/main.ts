@@ -18,7 +18,7 @@ const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 // const rateLimit = await octokit.rest.rateLimit.get();
 // console.log(rateLimit.data);
 
-const repositoryUrl = "https://github.com/facebook/react";
+const repositoryUrl = "https://github.com/encode/starlette";
 const repository = parseRepository(repositoryUrl);
 
 performance.mark("listContributors-start");
