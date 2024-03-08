@@ -25,7 +25,7 @@ export async function getContributedRepositoriesPaginated(
   cursor: string | null = null,
   allRepos: NonNullable<RepositoryNodes> = [],
 ) {
-  const { data, error } = await client.query(getContributedRepositories, {
+  const { data } = await client.query(getContributedRepositories, {
     login,
     cursor,
   });
